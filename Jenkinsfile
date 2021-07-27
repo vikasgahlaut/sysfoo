@@ -21,6 +21,14 @@ pipeline {
     }
 
   }
+  
+  post
+  {
+    always{
+      echo 'This pipeline is completed..'
+    }
+  } 
+    
   tools {
     maven 'Maven 3.6.3'
   }
