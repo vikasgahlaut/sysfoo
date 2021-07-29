@@ -1,0 +1,13 @@
+version: "3.8"
+
+metadata:
+  creationTimestamp: null
+  labels:
+    app: sysfoo
+  name: sysfoo
+
+services:
+  sysfoo:
+    image: gahlaut/sysfoo:latest
+    ports:
+      - 8888:8080
