@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: sysfoo
+  name: sysfoo
+spec:
+  ports:
+    - 8888:8080
+  selector:
+    app: sysfoo
+  type: NodePort
+status:
+  loadBalancer: {}
